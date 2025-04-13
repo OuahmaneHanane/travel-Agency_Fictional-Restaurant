@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Travel</title>
+    <link rel="shortcut icon" href="../assets/tour.png" type="image/x-icon">
+    <!--css link-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Adding Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark-subtle">
+        
+        <div class="container-fluid">
+            <!--logo-->
+            <img src="../assets/tour.png" alt="Atlas Travel logo">
+            <!--hamburger menu-->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#destinations" class="nav-link">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tours" class="nav-link">Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--hero section-->
+    <section class="jumbotron bg-image text-white d-flex align-items-center" id="home">
+        <div class="container text-center bg-dark bg-opacity-50 p-4 rounded">
+            <h1 class="display-4 fw-bold fst-italic"> Welcome to Atlas Travel</h1>
+            <p class="lead fw-normal">Explore the world with us</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Book now</a>
+            </p>
+        </div>
+    </section>
+
+    <!--destinations section-->
+    <section class="container" id="destinations">
+        <h2 class="text-center my-4 fw-bold">Top Destinations</h2>
+
+        <div class="row">
+            <!--first destination-->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="../assets/Marrakech.jpg" class="card-img-top" alt="Marrakech">
+                    <div class="card-body">
+                        <h5 class="card-title">Marrakech</h5>
+                        <p class="card-text">A vibrant city full of color, culture, and ancient souks— Marrakech invites you to lose yourself in its energy and history.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!--second destination-->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="../assets/taghazout.jpg" class="card-img-top" alt="Taghazout">
+                    <div class="card-body">
+                        <h5 class="card-title">Taghazout</h5>
+                        <p class="card-text">A perfect escape for surf lovers and sunset seekers — Taghazout offers peace, waves, and coastal charm.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!--third destination-->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="../assets/Chefchaouen.jpg" class="card-img-top" alt="Chefchaoun">
+                    <div class="card-body">
+                        <h5 class="card-title">Chefchaoun</h5>
+                        <p class="card-text">Calm, blue, and tucked between mountains — Chefchaouen is where you go to slow down and soak in the magic.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--tours section-->
+    <section class="container" id="tours">
+        <h2 class="text-center my-4 fw-bold">Tours</h2>
+        <div class="accordion" id="tourAccordion">
+          <!--first Accordion item-->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Sahara Adventure
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="../assets/desert.jpg" class="img-fluid" alt="desert">
+                  </div>
+                  <div class="col-md-8">
+                    <p>Embark on a once-in-a-lifetime journey through the vast, golden dunes of the Sahara Desert. Experience the serene beauty of endless sandscapes, ride camels under the scorching sun, and camp beneath a blanket of stars. Our Sahara Adventure offers a true taste of the desert's timeless allure, with unforgettable moments of peace, adventure, and discovery.</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Another Accordion Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Ouarzazate: The Hollywood of Morocco
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="../assets/ouarzazate.jpg" class="img-fluid" alt="Ouarzazate">
+                  </div>
+                  <div class="col-md-8">
+                    <p>Step into the heart of Morocco's cinematic landscape with our Ouarzazate tour. Known as the “Gateway to the Sahara,” Ouarzazate is a magical blend of ancient kasbahs, dramatic desert landscapes, and Hollywood film history. From visiting the iconic Ait Benhaddou, a UNESCO World Heritage site, to exploring the vast desert surroundings, this tour offers an unforgettable journey through Morocco's history and culture. Join us for a captivating experience filled with stunning views and cinematic memories.</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--third item-->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Essaouira- The Blue City by the Sea
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="../assets/essaouira.jpeg" class="img-fluid" alt="essaouira">
+                  </div>
+                  <div class="col-md-8">
+                    <p>Immerse yourself in the coastal charm of Essaouira, a UNESCO World Heritage site known for its stunning medina, vibrant blue-and-white architecture, and fresh sea breeze. Wander through the historic ramparts, visit the bustling fish market, and enjoy the serene beaches. Whether you're a history buff, a lover of fresh seafood, or simply seeking a peaceful escape by the Atlantic Ocean, our Essaouira tour promises an unforgettable journey full of culture, beauty, and relaxation.</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--contact form-->
+      <section class="container my-5" id="contact">
+        <h2 class="text-center mb-4 fw-bold">Contact Us</h2>
+        <form>
+            <!--name field-->
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your name">
+          </div>
+          <!--email field-->
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="your@example.com">
+          </div>
+          <!--destination field-->
+          <div class="mb-3">
+            <label for="destination" class="form-label"> destination of interest</label>
+            <input type="text" class="form-control" id="destination" placeholder="your destination">
+          </div>
+          <!--message field-->
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Your message..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </section>
+      
+
+      <footer class="bg-dark-subtle text-center py-4 mt-5">
+        <div class="container">
+          <!--copyright information-->
+          <p class="mb-2">&copy; 2025 Atlas Travel. All rights reserved.</p>
+          <div><!-- social media icons -->
+            <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="me-3"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </footer>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

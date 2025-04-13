@@ -1,0 +1,37 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.jumbotron{
+    background-image: url(../assets/scenic-destination.jpg) ;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+h1,
+h5{
+    font-family: 'Merriweather', serif;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+
+.card{
+    margin-top: 5px;
+    padding: 15px 5px;
+}
+
+/* Subtle zoom and shadow with smooth transition */
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+  }
+  @media (max-width: 600px){
+    .jumbotron{
+        height: 60vh;
+    }
+  }

@@ -1,0 +1,54 @@
+header{
+    background-color: rgb(253, 231, 205);
+}
+.logo-text{
+    font-family: 'Playfair Display', serif;
+    font-size: 35px; 
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../assets/seafood-dish.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+}
+h1{
+    font-family: 'Arial, Helvetica', sans-serif;
+}
+
+/* Menu Section Cards */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* Custom badge used to highlight special dishes like "Chef’s Choice" */
+.badge-special {
+    background-color: #e67e22;
+    color: white;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: rgb(253, 231, 205);
+}
+
+@media (max-width: 600px){
+    .hero{
+        height: 60vh;
+    }
+  }

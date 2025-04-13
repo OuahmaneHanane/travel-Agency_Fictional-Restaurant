@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bon Appétit</title>
+    <link rel="shortcut icon" href="../assets/-restaurant-menu_89837.png" type="image/x-icon">
+    <!--css link-->
+    <link rel="stylesheet" href="style.css">
+    <!--Bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Adding Google Fonts link for Playfair Display-->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light py-3 px-4">
+            <a class="navbar-brand fw-bold logo-text" href="#">Bon Appétit</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À propos de nous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container d-flex justify-content-center align-items-center h-100">
+            <div class="text-center bg-dark bg-opacity-25 p-4 rounded">
+                <h1>Explorez nos délices!</h1>
+                <p class="lead fw-normal">Savourez des plats délicieux dans un cadre unique.</p>
+                <a href="#menu" class="btn btn-primary">Voir le Menu</a>
+            </div>
+        </div>
+    </section>
+    
+    <!--menu section-->
+    <section id="menu" class="container py-5">
+        <h2 class="text-center mb-4">Notre Menu</h2>
+        <div class="row">
+            <!-- Menu Item 1 -->
+            <div class="col-md-4 mb-4 d-flex">
+                <div class="card h-100">
+                    <img src="../assets/Fettuccine_Alfredo_with_Chicken_image.webp" class="card-img-top" alt="Dish 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken Fettuccine Alfredo</h5>
+                        <p class="card-text">Un plat crémeux et réconfortant composé de fettuccine tendre, de poulet juteux et d'une sauce Alfredo riche, parsemé de parmesan fondu pour un goût irrésistible.</p>
+                        <p class="card-text"><strong>Prix: 250 MAD</strong></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu Item 2 -->
+            <div class="col-md-4 mb-4 d-flex">
+                <div class="card h-100">
+                    <img src="../assets/Caesar-salad.webp" class="card-img-top" alt="Dish 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Caesar Salad</h5>
+                        <p class="card-text">Une salade croquante et rafraîchissante avec de la laitue romaine, des croûtons dorés, du parmesan râpé, et une vinaigrette crémeuse César, le tout relevé d'une touche de poivre noir.</p>
+                        <p class="card-text"><strong>Prix: 150 MAD</strong></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu Item 3 -->
+            <div class="col-md-4 mb-4 d-flex">
+                <div class="card h-100">
+                    <img src="../assets/bastilla.jpg" class="card-img-top" alt="Dish 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken Bastilla
+                            <!--adding a special badge-->
+                            <span class="badge badge-special ms-2 d-inline-block">Chef's Choice</span>
+                        </h5>
+                        <p class="card-text">Une délicieuse pâtisserie marocaine composée de poulet épicé, et d'amandes grillées, le tout enveloppé dans une fine pâte filo, saupoudré de sucre glace et de cannelle</p>
+                        <p class="card-text"><strong>Prix: 300 MAD</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--About section-->
+    <section id="about" class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="../assets/restaurant.jpg" class="img-fluid" alt="restaurant">
+            </div>
+            <div class="col-md-6">
+                <h2 class="mt-4 mt-md-0">À propos de nous</h2>
+                <p>Bienvenue dans notre restaurant, un lieu où la passion pour la cuisine rencontre l'art de recevoir. Nous sommes une équipe de chefs expérimentés, dédiés à offrir une expérience culinaire inoubliable. Notre menu propose des plats inspirés des saveurs locales et internationales, préparés avec des ingrédients frais et de qualité. Nous croyons que chaque repas est une occasion de partager des moments mémorables avec vos proches.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!--Contact section-->
+    <section id="contact" class="container py-5">
+        <h2 class="text-center mb-4">Contactez-nous</h2>
+        <form>
+            <!--name field-->
+            <div class="mb-3">
+                <label for="name" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="name" placeholder="Votre nom">
+            </div>
+            <!--email field-->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Votre email">
+            </div>
+            <!--message field-->
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Votre message"></textarea>
+            </div>
+            <!--submit button-->
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+    </section>
+    
+    <footer class="py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 Bon Appétit. Tous droits réservés.</p>
+            <div><!-- social media icons -->
+                <a href="#" class="text-black me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-black me-3"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-black me-3"><i class="bi bi-twitter-x"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
